@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fig & Filter | About</title>
+  <meta name="description" content="The story of Fig & Filter: founded by Mara and Dev to bring together outstanding coffee and exceptional handmade food on Chalk Lane.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-container">
+      <div class="logo">
+        <a href="index.html">Fig & Filter</a>
+      </div>
+      <button class="nav-toggle" aria-label="Toggle menu" id="navToggle">Menu</button>
+      <nav class="nav-menu" id="navMenu">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="menu.html" class="nav-link">Menu</a>
+        <a href="catering.html" class="nav-link">Catering</a>
+        <a href="about.html" class="nav-link active">About</a>
+        <a href="visit.html" class="nav-link">Visit</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- Story Section -->
+    <section class="about-story-section section-gap">
+      <div class="about-story-text">
+        <h1 class="display-lg">The story</h1>
+        <p class="body-lg">Fig & Filter opened two years ago in what used to be a picture-framing shop on Chalk Lane. Mara and Dev had spent a decade working in other people's cafés — Mara running kitchens, Dev on the roaster — and kept meeting over the same complaint: the coffee was getting better everywhere, but the food was an afterthought, or the food was lovely and the coffee was burnt. So they opened the place where neither side is the afterthought.</p>
+        <p class="body-lg">The name comes from the fig tree in the courtyard out back, which predates the café, the framing shop, and possibly the street. In summer it ends up in the scones, the lemonade, and occasionally the filter roast notes.</p>
+      </div>
+      <div class="about-story-image">
+        <img src="images/interior-seating.jpg" alt="Wooden tables inside the café, surrounded by shelves of books and tea tins">
+      </div>
+    </section>
+
+    <!-- Founders Section -->
+    <section class="founders-section section-gap">
+      <h2 class="headline-md text-center">The founders</h2>
+      <div class="founders-grid">
+        <!-- Mara's Card -->
+        <div class="founder-card">
+          <div class="founder-image-wrapper">
+            <img src="images/founder-mara.jpg" alt="Mara Osei holding a plate of freshly baked croissants">
+          </div>
+          <div class="founder-info">
+            <span class="founder-role">kitchen</span>
+            <h3 class="headline-sm" style="color: var(--color-primary);">Mara Osei</h3>
+            <p class="body-md">Mara ran hotel breakfast kitchens for eight years and has strong opinions about butter. She writes the menu seasonally, bakes the first tray of croissants at 5:40 every morning, and believes a café is judged by its soup.</p>
+          </div>
+        </div>
+
+        <!-- Dev's Card -->
+        <div class="founder-card">
+          <div class="founder-image-wrapper">
+            <img src="images/founder-dev.jpg" alt="Dev Nair in his cap and apron behind the counter">
+          </div>
+          <div class="founder-info">
+            <span class="founder-role">coffee</span>
+            <h3 class="headline-sm" style="color: var(--color-primary);">Dev Nair</h3>
+            <p class="body-md">Dev roasts twice a week on the 5kg machine behind the counter and will talk about extraction for exactly as long as you let him. He buys from three small farms he can name from memory, and changes the filter roast weekly so the regulars never get bored.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Roasting Note Section -->
+    <section class="roasting-note-section section-gap">
+      <div class="roasting-note-content">
+        <h2 class="headline-md">The roasting note</h2>
+        <p class="body-lg">We roast in small batches on Tuesdays and Fridays. Espresso rests four days before we serve it; filter rests seven. If you buy beans at the counter, Dev will grind them for whatever you brew with at home — and he'll write the roast date on the bag, because it matters.</p>
+      </div>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section class="teaser-section">
+      <p class="body-lg">Want to visit us in person?</p>
+      <a href="visit.html" class="btn-primary">Find us →</a>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-info">
+        <div class="footer-brand">Fig & Filter</div>
+        <p>Open Tuesday to Sunday, 7:30am – 5:00pm</p>
+        <p>8 Chalk Lane</p>
+      </div>
+      <div class="footer-links">
+        <a href="mailto:hello@figandfilter.example" class="footer-link">hello@figandfilter.example</a>
+        <a href="catering.html" class="footer-link">Order catering</a>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      &copy; 2026 Fig & Filter. All rights reserved.
+    </div>
+  </footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const toggle = document.getElementById('navToggle');
+      const menu = document.getElementById('navMenu');
+      if (toggle && menu) {
+        toggle.addEventListener('click', () => {
+          menu.classList.toggle('active');
+          const isExpanded = menu.classList.contains('active');
+          toggle.setAttribute('aria-expanded', isExpanded);
+          toggle.textContent = isExpanded ? 'Close' : 'Menu';
+        });
+      }
+    });
+  </script>
+</body>
+</html>

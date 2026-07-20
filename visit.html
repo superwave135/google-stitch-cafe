@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fig & Filter | Visit</title>
+  <meta name="description" content="Find Fig & Filter on Chalk Lane. Opening hours, transit options, street parking, contact details, and courtyard guidelines.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-container">
+      <div class="logo">
+        <a href="index.html">Fig & Filter</a>
+      </div>
+      <button class="nav-toggle" aria-label="Toggle menu" id="navToggle">Menu</button>
+      <nav class="nav-menu" id="navMenu">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="menu.html" class="nav-link">Menu</a>
+        <a href="catering.html" class="nav-link">Catering</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="visit.html" class="nav-link active">Visit</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container" style="padding-top: 40px;">
+    <!-- Address and Hours (Top Section / Above the Fold) -->
+    <section class="visit-top-section section-gap">
+      <div class="visit-info-column">
+        <div class="visit-info-block">
+          <h1 class="display-lg" style="margin-bottom: 8px;">Fig & Filter</h1>
+          <p class="body-lg" style="font-weight: 700;">8 Chalk Lane (corner of Weaver Street)</p>
+        </div>
+
+        <div class="visit-info-block">
+          <h2 class="headline-sm">Opening hours</h2>
+          <table class="visit-hours-table">
+            <tbody>
+              <tr>
+                <td>Monday</td>
+                <td>Closed</td>
+              </tr>
+              <tr>
+                <td>Tuesday – Friday</td>
+                <td>7:30am – 5:00pm</td>
+              </tr>
+              <tr>
+                <td>Saturday – Sunday</td>
+                <td>8:00am – 5:00pm</td>
+              </tr>
+            </tbody>
+          </table>
+          <p class="body-md text-muted" style="margin-top: 12px; font-style: italic;">Kitchen closes 3:30pm daily. Public holidays: check our door or email us.</p>
+        </div>
+        
+        <!-- Primary CTA -->
+        <a href="mailto:hello@figandfilter.example" class="btn-primary">Email Us</a>
+      </div>
+
+      <div class="visit-image-column">
+        <img src="images/storefront.jpg" alt="The Fig & Filter corner shopfront with deep-green window frames and a pavement table">
+      </div>
+    </section>
+
+    <!-- Details Grid -->
+    <section class="visit-details-grid">
+      <!-- How to find us & Good to know -->
+      <div class="card visit-detail-card">
+        <div class="visit-info-block" style="gap: 16px;">
+          <h3 class="headline-sm">How to find us</h3>
+          <p class="body-md">We're the corner shopfront with the deep-green window frames, halfway down Chalk Lane, with the fig tree visible through the side gate. If you can see the takeaway menu lettered on the glass, you're in the right place.</p>
+        </div>
+        
+        <div class="visit-info-block" style="gap: 16px; margin-top: 24px;">
+          <h3 class="headline-sm">Good to know</h3>
+          <p class="body-md">The courtyard is dog-friendly; inside is not (sorry — kitchen rules). Big tables can be reserved for groups of six or more by email.</p>
+        </div>
+      </div>
+
+      <!-- Getting here & Contact -->
+      <div class="card visit-detail-card">
+        <div class="visit-info-block" style="gap: 16px;">
+          <h3 class="headline-sm">Getting here</h3>
+          <ul style="padding-left: 0; display: flex; flex-direction: column; gap: 12px;">
+            <li class="body-md"><strong>On foot or bike:</strong> bike racks are directly outside; the courtyard has space for prams.</li>
+            <li class="body-md"><strong>By train:</strong> eight minutes' walk from Weaver Street station — exit toward the market, then second left.</li>
+            <li class="body-md"><strong>By bus:</strong> routes 14 and 62 stop at the top of Chalk Lane.</li>
+            <li class="body-md"><strong>By car:</strong> street parking on Weaver Street is free for the first hour; there's a paid car park behind the market, four minutes' walk.</li>
+          </ul>
+        </div>
+
+        <div class="visit-info-block" style="gap: 16px; margin-top: 24px;">
+          <h3 class="headline-sm">Contact</h3>
+          <ul class="contact-list">
+            <li class="body-md">Email: <a href="mailto:hello@figandfilter.example" class="contact-link">hello@figandfilter.example</a></li>
+            <li class="body-md">Phone: <a href="tel:5550142286" class="contact-link">(555) 014-2286</a></li>
+            <li class="body-md">Catering enquiries: <a href="mailto:catering@figandfilter.example" class="contact-link">catering@figandfilter.example</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-info">
+        <div class="footer-brand">Fig & Filter</div>
+        <p>Open Tuesday to Sunday, 7:30am – 5:00pm</p>
+        <p>8 Chalk Lane</p>
+      </div>
+      <div class="footer-links">
+        <a href="mailto:hello@figandfilter.example" class="footer-link">hello@figandfilter.example</a>
+        <a href="catering.html" class="footer-link">Order catering</a>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      &copy; 2026 Fig & Filter. All rights reserved.
+    </div>
+  </footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const toggle = document.getElementById('navToggle');
+      const menu = document.getElementById('navMenu');
+      if (toggle && menu) {
+        toggle.addEventListener('click', () => {
+          menu.classList.toggle('active');
+          const isExpanded = menu.classList.contains('active');
+          toggle.setAttribute('aria-expanded', isExpanded);
+          toggle.textContent = isExpanded ? 'Close' : 'Menu';
+        });
+      }
+    });
+  </script>
+</body>
+</html>

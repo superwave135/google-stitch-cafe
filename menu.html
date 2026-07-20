@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fig & Filter | Menu</title>
+  <meta name="description" content="View the menu at Fig & Filter: specialty coffee, loose-leaf tea, fresh house-made juices, sourdough toasts, bakery, and seasonal specials.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-container">
+      <div class="logo">
+        <a href="index.html">Fig & Filter</a>
+      </div>
+      <button class="nav-toggle" aria-label="Toggle menu" id="navToggle">Menu</button>
+      <nav class="nav-menu" id="navMenu">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="menu.html" class="nav-link active">Menu</a>
+        <a href="catering.html" class="nav-link">Catering</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="visit.html" class="nav-link">Visit</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <header class="menu-page-header text-center">
+      <h1 class="display-lg">Our Menu</h1>
+      <p class="body-lg text-muted" style="margin-top: 12px;">Roasted here. Baked here. Stay as long as you like. Simple as that.</p>
+    </header>
+
+    <div class="menu-container">
+      <!-- Left Column: Images -->
+      <section class="menu-images">
+        <img src="images/menu-flatlay.jpg" alt="A croissant and two lattes on a wooden table, seen from above" class="menu-img-flatlay">
+        <img src="images/latte-art.jpg" alt="Close-up of heart-shaped latte art in a Fig & Filter cup" class="menu-img-latte">
+      </section>
+
+      <!-- Right Column: Menu Sections -->
+      <section class="menu-sections">
+        <div class="dietary-legend label-caps text-muted">
+          Dietary markers: <span class="dietary-marker">V</span> vegetarian · <span class="dietary-marker">VG</span> vegan · <span class="dietary-marker">GF</span> gluten-free
+        </div>
+
+        <!-- Coffee Section -->
+        <div class="menu-section">
+          <h2 class="menu-section-title">Coffee</h2>
+          <div class="menu-list">
+            <div class="menu-item">
+              <div class="menu-item-header">
+                <span class="menu-item-name">Espresso</span>
+                <span class="menu-item-price">$3.50</span>
+              </div>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item-header">
+                <span class="menu-item-name">Long black</span>
+                <span class="menu-item-price">$4.00</span>
+              </div>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item-header">
+                <span class="menu-item-name">Flat white</span>
+                <span class="menu-item-price">$5.00</span>
+              </div>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item-header">
+                <span class="menu-item-name">Latte</span>
+                <span class="menu-item-price">$5.00</span>
+              </div>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item-header">
+                <span class="menu-item-name">Cappuccino</span>
+                <span class="menu-item-price">$5.00</span>
+              </div>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item-header">
+                <span class="menu-item-name">Filter of the week</span>
+                <span class="menu-item-price">$6.00</span>
+              </div>
+              <p class="menu-item-description">ask what's on</p>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item-header">
+                <span class="menu-item-name">Iced latte</span>
+                <span class="menu-item-price">$6.00</span>
+              </div>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item-header">
+                <span class="menu-item-name">Extra shot / oat or soy milk</span>
+                <span class="menu-item-price">+$0.80</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Not Coffee Section -->
+        <div class="menu-section">
+          <h2 class="menu-section-title">Not Coffee</h2>
+          <div class="menu-list">
+            <div class="menu-item">
+              <div class="menu-item-header">
+                <span class="menu-item-name">Loose-leaf tea</span>
+                <span class="menu-item-price">$4.50</span>
+              </div>
+              <p class="menu-item-description">English breakfast, sencha, chamomile</p>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item-header">
+                <span class="menu-item-name">Chai latte</span>
+                <span class="menu-item-price">$5.50</span>
+              </div>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item-header">
+                <span class="menu-item-name">Fresh orange juice</span>
+                <span class="menu-item-price">$6.00</span>
+              </div>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item-header">
+                <span class="menu-item-name">House-made lemonade with fig syrup</span>
+                <span class="menu-item-price">$5.50</span>
+              </div>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item-header">
+                <span class="menu-item-name">Hot chocolate</span>
+                <span class="menu-item-price">$5.00</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- All-Day Kitchen Section -->
+        <div class="menu-section">
+          <h2 class="menu-section-title">All-Day Kitchen</h2>
+          <div class="menu-list">
+            <div class="menu-item">
+              <div class="menu-item-header">
+                <span class="menu-item-name">Sourdough toast, cultured butter, house jam <span class="dietary-marker">V</span></span>
+                <span class="menu-item-price">$8.00</span>
+              </div>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item-header">
+                <span class="menu-item-name">Granola, yoghurt, seasonal fruit <span class="dietary-marker">V</span><span class="dietary-marker">GF</span></span>
+                <span class="menu-item-price">$12.00</span>
+              </div>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item-header">
+                <span class="menu-item-name">Mushrooms on toast, poached egg, herbs <span class="dietary-marker">V</span></span>
+                <span class="menu-item-price">$16.00</span>
+              </div>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item-header">
+                <span class="menu-item-name">Fig & Filter big breakfast</span>
+                <span class="menu-item-price">$22.00</span>
+              </div>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item-header">
+                <span class="menu-item-name">Halloumi and roast-vegetable sandwich <span class="dietary-marker">V</span></span>
+                <span class="menu-item-price">$14.00</span>
+              </div>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item-header">
+                <span class="menu-item-name">Chicken schnitzel sandwich, slaw, pickles</span>
+                <span class="menu-item-price">$16.00</span>
+              </div>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item-header">
+                <span class="menu-item-name">Soup of the day with sourdough</span>
+                <span class="menu-item-price">$12.00</span>
+              </div>
+              <p class="menu-item-description">ask</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bakery Section -->
+        <div class="menu-section">
+          <h2 class="menu-section-title">Bakery</h2>
+          <div class="menu-list">
+            <div class="menu-item">
+              <div class="menu-item-header">
+                <span class="menu-item-name">Butter croissant <span class="dietary-marker">V</span></span>
+                <span class="menu-item-price">$4.50</span>
+              </div>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item-header">
+                <span class="menu-item-name">Almond croissant <span class="dietary-marker">V</span></span>
+                <span class="menu-item-price">$6.00</span>
+              </div>
+              <p class="menu-item-description">until they run out</p>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item-header">
+                <span class="menu-item-name">Fig and walnut scone <span class="dietary-marker">V</span></span>
+                <span class="menu-item-price">$5.00</span>
+              </div>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item-header">
+                <span class="menu-item-name">Banana bread, toasted <span class="dietary-marker">V</span><span class="dietary-marker">GF</span></span>
+                <span class="menu-item-price">$6.50</span>
+              </div>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item-header">
+                <span class="menu-item-name">Cookie of the day <span class="dietary-marker">V</span></span>
+                <span class="menu-item-price">$4.00</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Footnote -->
+        <div class="body-md text-muted" style="margin-top: 32px; border-top: 1px solid rgba(74, 44, 77, 0.15); padding-top: 16px; font-style: italic;">
+          Prices include tax. The kitchen closes at 3:30pm; coffee and bakery run until close.
+        </div>
+      </section>
+    </div>
+
+    <!-- Call to action block -->
+    <section class="teaser-section">
+      <p class="body-lg">Need catering?</p>
+      <a href="catering.html" class="btn-primary">Order catering →</a>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-info">
+        <div class="footer-brand">Fig & Filter</div>
+        <p>Open Tuesday to Sunday, 7:30am – 5:00pm</p>
+        <p>8 Chalk Lane</p>
+      </div>
+      <div class="footer-links">
+        <a href="mailto:hello@figandfilter.example" class="footer-link">hello@figandfilter.example</a>
+        <a href="catering.html" class="footer-link">Order catering</a>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      &copy; 2026 Fig & Filter. All rights reserved.
+    </div>
+  </footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const toggle = document.getElementById('navToggle');
+      const menu = document.getElementById('navMenu');
+      if (toggle && menu) {
+        toggle.addEventListener('click', () => {
+          menu.classList.toggle('active');
+          const isExpanded = menu.classList.contains('active');
+          toggle.setAttribute('aria-expanded', isExpanded);
+          toggle.textContent = isExpanded ? 'Close' : 'Menu';
+        });
+      }
+    });
+  </script>
+</body>
+</html>

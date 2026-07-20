@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fig & Filter | Catering</title>
+  <meta name="description" content="Artisanal catering for meetings, workshops, and office events. Baked and roasted fresh daily, delivered within a 5km radius.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-container">
+      <div class="logo">
+        <a href="index.html">Fig & Filter</a>
+      </div>
+      <button class="nav-toggle" aria-label="Toggle menu" id="navToggle">Menu</button>
+      <nav class="nav-menu" id="navMenu">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="menu.html" class="nav-link">Menu</a>
+        <a href="catering.html" class="nav-link active">Catering</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="visit.html" class="nav-link">Visit</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- Intro Section -->
+    <section class="catering-intro-section section-gap">
+      <div class="catering-intro-text">
+        <h1 class="display-lg">Catering</h1>
+        <p class="body-lg text-muted">We cater meetings, workshops, and office mornings within a 5km radius. Everything is made in our kitchen the same morning it's delivered. Order by 2:00pm the day before; for the Full Spread, give us two working days.</p>
+        <a href="mailto:catering@figandfilter.example" class="btn-primary">Order catering</a>
+      </div>
+      <div class="catering-image">
+        <img src="images/catering-spread.jpg" alt="A catering spread of filled croissants and canapés on serving stands">
+      </div>
+    </section>
+
+    <!-- Packages Section -->
+    <section class="section-gap">
+      <h2 class="headline-md text-center" style="margin-bottom: 32px;">Catering Packages</h2>
+      <div class="packages-grid">
+        <!-- Card 1: The Coffee Run -->
+        <div class="package-card">
+          <div class="package-header">
+            <h3 class="package-title">The Coffee Run</h3>
+            <span class="package-price">$9 per person</span>
+          </div>
+          <p class="package-description">For meetings that just need good coffee.</p>
+          <ul class="package-inclusions">
+            <li>A 2.5L flask of batch-brew filter per 8 people</li>
+            <li>Oat and dairy milk, cups, and sugar included</li>
+            <li>Add a flask of chai for $12</li>
+          </ul>
+        </div>
+
+        <!-- Card 2: The Morning Tea -->
+        <div class="package-card">
+          <div class="package-header">
+            <h3 class="package-title">The Morning Tea</h3>
+            <span class="package-price">$16 per person</span>
+          </div>
+          <p class="package-description">The one most offices reorder.</p>
+          <ul class="package-inclusions">
+            <li>Batch-brew filter as above</li>
+            <li>Two bakery items per person (croissants, scones, cookie of the day)</li>
+            <li>Seasonal fruit platter</li>
+            <li>Minimum 6 people</li>
+          </ul>
+        </div>
+
+        <!-- Card 3: The Full Spread -->
+        <div class="package-card">
+          <div class="package-header">
+            <h3 class="package-title">The Full Spread</h3>
+            <span class="package-price">$28 per person</span>
+          </div>
+          <p class="package-description">For workshops, planning days, and celebrations.</p>
+          <ul class="package-inclusions">
+            <li>Everything in The Morning Tea</li>
+            <li>Sandwich platter (halloumi and roast vegetable, chicken schnitzel)</li>
+            <li>Fresh orange juice and house lemonade</li>
+            <li>Minimum 10 people, two working days' notice</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- How to Order Section -->
+    <section class="how-to-order-section section-gap">
+      <div class="how-to-order-container">
+        <h2 class="headline-md">How to order</h2>
+        <p class="body-md">Email <strong>catering@figandfilter.example</strong> with your date, headcount, delivery address, and any dietary needs. We confirm within one working day. Delivery is free within 5km; we drop off, set up, and collect the kit the same afternoon.</p>
+      </div>
+    </section>
+
+    <!-- Call to action Section -->
+    <section class="teaser-section">
+      <h2 class="headline-sm">Call to action</h2>
+      <p class="body-lg">
+        <a href="mailto:catering@figandfilter.example" class="btn-secondary"><strong>Order catering</strong> → mailto:catering@figandfilter.example</a>
+      </p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-info">
+        <div class="footer-brand">Fig & Filter</div>
+        <p>Open Tuesday to Sunday, 7:30am – 5:00pm</p>
+        <p>8 Chalk Lane</p>
+      </div>
+      <div class="footer-links">
+        <a href="mailto:hello@figandfilter.example" class="footer-link">hello@figandfilter.example</a>
+        <a href="catering.html" class="footer-link">Order catering</a>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      &copy; 2026 Fig & Filter. All rights reserved.
+    </div>
+  </footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const toggle = document.getElementById('navToggle');
+      const menu = document.getElementById('navMenu');
+      if (toggle && menu) {
+        toggle.addEventListener('click', () => {
+          menu.classList.toggle('active');
+          const isExpanded = menu.classList.contains('active');
+          toggle.setAttribute('aria-expanded', isExpanded);
+          toggle.textContent = isExpanded ? 'Close' : 'Menu';
+        });
+      }
+    });
+  </script>
+</body>
+</html>

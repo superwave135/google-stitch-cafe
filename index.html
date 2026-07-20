@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fig & Filter | Home</title>
+  <meta name="description" content="Fig & Filter: neighborhood roastery and bakehouse on Chalk Lane. Small batches, twice a week. Everything baked fresh on site daily.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-container">
+      <div class="logo">
+        <a href="index.html">Fig & Filter</a>
+      </div>
+      <button class="nav-toggle" aria-label="Toggle menu" id="navToggle">Menu</button>
+      <nav class="nav-menu" id="navMenu">
+        <a href="index.html" class="nav-link active">Home</a>
+        <a href="menu.html" class="nav-link">Menu</a>
+        <a href="catering.html" class="nav-link">Catering</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="visit.html" class="nav-link">Visit</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero-header-container">
+      <img src="images/hero-espresso-pour.jpg" alt="Espresso pouring from the portafilter into a white cup at the Fig & Filter counter" class="hero-image">
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <h1 class="hero-title">Fig & Filter</h1>
+        <p class="hero-subtitle">Roasted here. Baked here. Poured for you.</p>
+      </div>
+    </section>
+
+    <section class="essentials-banner">
+      <div class="essentials-container">
+        <span class="essentials-text">Open Tuesday to Sunday, 7:30am – 5:00pm · 8 Chalk Lane</span>
+        <a href="visit.html" class="btn-primary">Find us →</a>
+      </div>
+    </section>
+
+    <div class="container">
+      <section class="section-gap">
+        <h2 class="headline-md text-center section-title">Three reasons to visit</h2>
+        <div class="reasons-grid">
+          <div class="reason-card">
+            <h3 class="reason-title">We roast our own.</h3>
+            <p class="reason-body">Small batches, twice a week, in the machine you can see from the counter. If you can smell it, it was probably roasted within the last few days.</p>
+          </div>
+          <div class="reason-card">
+            <h3 class="reason-title">The kitchen doesn't cut corners.</h3>
+            <p class="reason-body">Everything in the pastry case was made on site that morning. When the almond croissants run out, they run out.</p>
+          </div>
+          <div class="reason-card">
+            <h3 class="reason-title">Stay as long as you like.</h3>
+            <p class="reason-body">Big tables, honest wifi, and nobody hovering to turn your seat. Laptops welcome on weekdays; humans welcome always.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="teaser-section">
+        <p class="body-lg">Hungry already?</p>
+        <a href="menu.html" class="btn-secondary">See the full menu →</a>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-info">
+        <div class="footer-brand">Fig & Filter</div>
+        <p>Open Tuesday to Sunday, 7:30am – 5:00pm</p>
+        <p>8 Chalk Lane</p>
+      </div>
+      <div class="footer-links">
+        <a href="mailto:hello@figandfilter.example" class="footer-link">hello@figandfilter.example</a>
+        <a href="catering.html" class="footer-link">Order catering</a>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      &copy; 2026 Fig & Filter. All rights reserved.
+    </div>
+  </footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const toggle = document.getElementById('navToggle');
+      const menu = document.getElementById('navMenu');
+      if (toggle && menu) {
+        toggle.addEventListener('click', () => {
+          menu.classList.toggle('active');
+          const isExpanded = menu.classList.contains('active');
+          toggle.setAttribute('aria-expanded', isExpanded);
+          toggle.textContent = isExpanded ? 'Close' : 'Menu';
+        });
+      }
+    });
+  </script>
+</body>
+</html>
